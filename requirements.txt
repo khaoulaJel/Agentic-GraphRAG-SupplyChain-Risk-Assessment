@@ -1,0 +1,25 @@
+# LLM & agent framework
+langchain==0.3.25
+langchain-openai==0.3.16
+langchain-anthropic==0.3.15
+langchain-google-genai
+langgraph==0.4.3
+
+# Graph database
+neo4j==5.28.1
+
+# Web search tool
+tavily-python==0.5.4
+
+# Data handling
+pandas==2.2.3
+python-dotenv==1.1.0
+requests==2.32.3
+
+# Graph visualization
+networkx==3.4.2
+matplotlib==3.10.3
+
+# Optional: document parsing (for PDFs/filings)
+pypdf==5.4.0
+beautifulsoup4==4.13.4
