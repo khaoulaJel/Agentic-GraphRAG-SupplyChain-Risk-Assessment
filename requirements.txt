@@ -21,5 +21,6 @@ networkx==3.4.2
 matplotlib==3.10.3
 
 # Optional: document parsing (for PDFs/filings)
+docling
 pypdf==5.4.0
 beautifulsoup4==4.13.4
