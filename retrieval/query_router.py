@@ -14,18 +14,16 @@ RISK_INTENT_KEYWORDS = ("risk", "exposed", "political", "geopolit")
 
 
 
-# Agentic query router using LLM to select retrieval tool
-def route_query_agentically(query: str, llm):
-    prompt = f"""
-    Analyze this supply chain query: \"{query}\"
-    Decide which retrieval tool is most appropriate:
 
-    1. EXPOSURE_ANALYSIS: Use if the user is asking about risks, dependencies, 
-       or how a company/product is affected by a country or material.
-    2. KNOWLEDGE_GRAPH_SEARCH: Use for general \"What is\" or \"Tell me about\" questions.
-    3. WEB_SEARCH: Use if the query requires 2024-2026 real-time news not in a database.
+# Supply chain risk-aware query router
+RISK_INTENT_KEYWORDS = (
+    "risk", "exposed", "exposure", "disruption", "geopolit", "sanction", "tariff", "affected by", "poses risk"
+)
 
-    Return ONLY the name of the tool.
-    """
-    decision = llm.invoke(prompt).content
-    return decision
+def route_query(query: str, llm=None):
+    q_lower = query.lower()
+    if any(kw in q_lower for kw in RISK_INTENT_KEYWORDS) or any(word in q_lower for word in ["country", "location", "geographic"]):
+        return "EXPOSURE_ANALYSIS"
+    if any(word in q_lower for word in ["supplier", "supply", "source", "produce", "material", "tier"]):
+        return "GRAPH_TRAVERSAL"
+    return "GRAPH_TRAVERSAL"  # default
