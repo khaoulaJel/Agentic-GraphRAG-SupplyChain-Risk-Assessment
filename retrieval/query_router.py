@@ -13,25 +13,19 @@ from retrieval.cypher_templates import (
 RISK_INTENT_KEYWORDS = ("risk", "exposed", "political", "geopolit")
 
 
-def route_query(query: str, resolved_entities: dict[str, list[str]], driver: Any) -> list[dict]:
+
+# Agentic query router using LLM to select retrieval tool
+def route_query_agentically(query: str, llm):
+    prompt = f"""
+    Analyze this supply chain query: \"{query}\"
+    Decide which retrieval tool is most appropriate:
+
+    1. EXPOSURE_ANALYSIS: Use if the user is asking about risks, dependencies, 
+       or how a company/product is affected by a country or material.
+    2. KNOWLEDGE_GRAPH_SEARCH: Use for general \"What is\" or \"Tell me about\" questions.
+    3. WEB_SEARCH: Use if the query requires 2024-2026 real-time news not in a database.
+
+    Return ONLY the name of the tool.
     """
-    Select the optimal Cypher template based on keyword intent heuristics.
-
-    Returns a flat list of dict records ready for serialization.
-    """
-    query_lower = query.lower()
-    all_names = [name for names in resolved_entities.values() for name in names]
-
-
-    if any(keyword in query_lower for keyword in RISK_INTENT_KEYWORDS):
-        target_entities = (
-            resolved_entities.get("companies", []) +
-            resolved_entities.get("products", []) +
-            resolved_entities.get("organizations", [])
-        )
-        if target_entities:
-            with driver.session() as session:
-                result = session.run(COUNTRY_EXPOSURE_QUERY, company_names=target_entities)
-                return [record.data() for record in result]
-
-    return fetch_subgraph(all_names, driver)
+    decision = llm.invoke(prompt).content
+    return decision

@@ -24,16 +24,13 @@ ORDER BY CASE WHEN 'SUPPLIES_TO' IN rel_types THEN 0 WHEN 'SOURCES_FROM' IN rel_
 LIMIT 150
 """
 COUNTRY_EXPOSURE_QUERY = """
-// Traverse any relationship type between Company and Material, and Material to Country/Location
-MATCH (co:Company)-[*1..3]-(m:Material)-[*1..2]->(c)
-WHERE co.name IN $company_names
-    AND (c:Country OR c:Location)
-RETURN
-        co.name     AS company,
-        m.name      AS material,
-        c.name      AS country_or_location,
-        c.risk_tier AS country_risk,
-        labels(c)   AS location_labels
+// Schema-agnostic, shortest path exposure analysis
+MATCH (startNode) WHERE startNode.name IN $entity_names
+MATCH (loc) WHERE (loc:Country OR loc:Location)
+MATCH path = shortestPath((startNode)-[*..5]-(loc))
+WHERE any(r IN relationships(path) WHERE type(r) IN ['SUPPLIES_TO', 'SOURCES_FROM', 'AFFECTS'])
+RETURN path, loc.risk_tier as risk
+ORDER BY risk DESC
 """
 
 
