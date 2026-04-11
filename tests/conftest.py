@@ -142,9 +142,5 @@ def clear_embedding_cache():
     Root cause of failures: lru_cache.cache_clear() only evicts cached results;
     it does not reset MagicMock.call_count, so counts bled across tests.
     """
-    from retrieval.entity_resolver import _cached_embedding, _model
-    _cached_embedding.cache_clear()
-    _model.encode.reset_mock()
+    # No-op: embedding/model cache is no longer used in entity_resolver
     yield
-    _cached_embedding.cache_clear()
-    _model.encode.reset_mock()
