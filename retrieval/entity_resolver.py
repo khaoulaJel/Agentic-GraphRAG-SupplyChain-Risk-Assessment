@@ -35,7 +35,7 @@ def resolve_entities_semantically(extracted: dict, driver):
                 # 1. Vector lookup (top 5)
                 vector = get_embedding(name)
                 cypher = """
-                CALL db.index.vector.queryNodes('company_embeddings', 5, $vector)
+                CALL db.index.vector.queryNodes('entity_embedding_idx', 5, $vector)
                 YIELD node, score
                 WHERE score > 0.78
                 RETURN node.name as canonical_name, score, labels(node) as node_labels
