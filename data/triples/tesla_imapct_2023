@@ -1,0 +1,418 @@
+
+{
+  "entities": [
+    {
+      "name": "Tesla",
+      "type": "COMPANY",
+      "context": "Tesla's 2023 Impact Report detailing mission, governance, sustainability efforts, supply chain, and environmental impact",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Nickel",
+      "type": "MATERIAL",
+      "context": "Battery materials including nickel in cathodes (NMC, NCA); responsible sourcing from Indonesia (13% of Tesla's nickel); direct sourcing from mines and refiners",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Cobalt",
+      "type": "MATERIAL",
+      "context": "Cobalt in nickel-based cathodes; sourced directly from large-scale mines; child labor-free efforts; suppliers in DRC",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lithium",
+      "type": "MATERIAL",
+      "context": "Critical battery material; lithium refinery in Corpus Christi, Texas; sourcing from Chile and Australia; IRMA audits",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Copper",
+      "type": "MATERIAL",
+      "context": "Recovered from battery recycling in 2023 (860 mt); battery input",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Aluminum",
+      "type": "MATERIAL",
+      "context": "Used in vehicle body, Gigacastings, batteries; direct sourcing from smelters; ASI certification push",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Steel",
+      "type": "MATERIAL",
+      "context": "Ferrous metals (steel and iron) in body, chassis, powertrain; direct sourcing from mills",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Gigafactory Nevada",
+      "type": "PRODUCT/SERVICE",
+      "context": "Battery recycling at Gigafactory Nevada; processing recovered materials",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Gigafactory Texas",
+      "type": "PRODUCT/SERVICE",
+      "context": "Gigafactory Texas; lithium refinery in Corpus Christi, Texas; natural gas reductions, water management",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Gigafactory Berlin-Brandenburg",
+      "type": "PRODUCT/SERVICE",
+      "context": "Gigafactory Berlin-Brandenburg; water reduction initiatives, renewable matching",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Gigafactory Shanghai",
+      "type": "PRODUCT/SERVICE",
+      "context": "Gigafactory Shanghai; low waste per vehicle",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Fremont Factory",
+      "type": "PRODUCT/SERVICE",
+      "context": "Fremont Factory; higher waste per vehicle compared to new Gigafactories",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "United States",
+      "type": "LOCATION",
+      "context": "Tesla operations, Gigafactories in Nevada, Texas, Fremont; lithium refinery in Texas; sourcing from US mills",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "China",
+      "type": "LOCATION",
+      "context": "Gigafactory Shanghai; cobalt refiners like Huayou, CNGR; nickel processing",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Indonesia",
+      "type": "LOCATION",
+      "context": "13% of Tesla's nickel from Indonesia; visits to mines and smelters; risks related to GHG, deforestation, water",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Democratic Republic of Congo",
+      "type": "LOCATION",
+      "context": "Cobalt sourcing from large-scale mines (Kamoto Copper Company - Glencore, Mutanda); Fair Cobalt Alliance; satellite monitoring",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Australia",
+      "type": "LOCATION",
+      "context": "Nickel from Nickel West (BHP), Murrin Murrin (Glencore); lithium sourcing visits",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Chile",
+      "type": "LOCATION",
+      "context": "Lithium sourcing from Chile (Albemarle); on-site visits",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Glencore",
+      "type": "COMPANY",
+      "context": "Cobalt suppliers: Kamoto Copper Company (KCC), Mutanda Mining in DRC; nickel from Murrin Murrin in Australia",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Vale",
+      "type": "COMPANY",
+      "context": "Nickel supplier: Sudbury (Vale) in Canada",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "BHP",
+      "type": "COMPANY",
+      "context": "Nickel supplier: Nickel West (BHP) in Australia",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Huayou",
+      "type": "COMPANY",
+      "context": "Cobalt and nickel refiner in China and Indonesia",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "CNGR",
+      "type": "COMPANY",
+      "context": "Cobalt and nickel refiner in China and Indonesia",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Albemarle",
+      "type": "COMPANY",
+      "context": "Lithium supplier with mines and refineries in Chile, Australia, China",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Board of Directors",
+      "type": "ORGANIZATION/BODY",
+      "context": "Tesla's Board of Directors oversees ESG risks, mission, strategy, Audit Committee for ESG",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Task Force on Climate-Related Financial Disclosures",
+      "type": "REGULATION/STANDARD",
+      "context": "TCFD alignment since 2022; physical climate risk assessments",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "United Nations Guiding Principles on Business and Human Rights",
+      "type": "REGULATION/STANDARD",
+      "context": "UNGPs used in Global Human Rights Policy and responsible sourcing",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "OECD Guidelines for Multinational Enterprises",
+      "type": "REGULATION/STANDARD",
+      "context": "Utilized in human rights and responsible sourcing framework",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Aluminium Stewardship Initiative",
+      "type": "REGULATION/STANDARD",
+      "context": "ASI Performance Standard and Chain of Custody; certification for aluminum suppliers",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Initiative for Responsible Mining Assurance",
+      "type": "REGULATION/STANDARD",
+      "context": "IRMA Standard; audits for lithium, nickel, graphite mines",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Responsible Minerals Initiative",
+      "type": "ORGANIZATION/BODY",
+      "context": "RMI RMAP audits for cobalt, nickel; Tesla chairs Nickel and Lithium Working Groups",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Supply chain decarbonization",
+      "type": "RISK/EVENT",
+      "context": "Efforts to reduce Scope 3 emissions through primary data, supplier GHG reduction plans, and targets",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Forced labor risk",
+      "type": "RISK/EVENT",
+      "context": "Combatting forced labor in supply chain via audits, screenings, and remediation",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Child labor risk",
+      "type": "RISK/EVENT",
+      "context": "Child labor-free cobalt from large-scale mines; remediation in artisanal mining via Fair Cobalt Alliance",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Electric vehicles",
+      "type": "PRODUCT/SERVICE",
+      "context": "Tesla EVs (Model 3, Model Y, etc.) that avoid emissions; over 1.8 million delivered in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Battery recycling",
+      "type": "PRODUCT/SERVICE",
+      "context": "In-house and partner recycling; recovered nickel, cobalt, copper, lithium; >90% of materials recycled",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Gigafactory lithium refinery",
+      "type": "PRODUCT/SERVICE",
+      "context": "In Corpus Christi, Texas; low-toxicity process, reduced natural gas use",
+      "confidence": "HIGH"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "PRODUCES",
+      "object": "Electric vehicles",
+      "object_type": "PRODUCT/SERVICE",
+      "evidence": "Tesla Produced and Delivered Over 1.8 Million EVs Globally in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "SOURCES_FROM",
+      "object": "Nickel",
+      "object_type": "MATERIAL",
+      "evidence": "13% of Tesla's nickel came from Indonesia [...] >50% of nickel sourced directly from mines and refiners in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "SOURCES_FROM",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": ">55% of cobalt sourced directly from mines and refiners in 2023 [...] only purchase cobalt from large-scale mines",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "SOURCES_FROM",
+      "object": "Lithium",
+      "object_type": "MATERIAL",
+      "evidence": ">75% of lithium sourced directly from mines and refiners in 2023 [...] on-site visits with Lithium suppliers in Chile and Australia",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Nickel",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Indonesia",
+      "object_type": "LOCATION",
+      "evidence": "13% of Tesla's nickel came from Indonesia",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Democratic Republic of Congo",
+      "object_type": "LOCATION",
+      "evidence": "Kamoto Copper Company (Glencore), Mutanda Mining (Glencore) in DRCongo",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Glencore",
+      "subject_type": "COMPANY",
+      "predicate": "SUPPLIES_TO",
+      "object": "Tesla",
+      "object_type": "COMPANY",
+      "evidence": "Cobalt suppliers: Kamoto Copper Company (Glencore), Mutanda Mining (Glencore); nickel from Murrin Murrin",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "OWNS",
+      "object": "Gigafactory lithium refinery",
+      "object_type": "PRODUCT/SERVICE",
+      "evidence": "our own lithium refinery in Corpus Christi, Texas",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Gigafactory lithium refinery",
+      "subject_type": "PRODUCT/SERVICE",
+      "predicate": "LOCATED_IN",
+      "object": "United States",
+      "object_type": "LOCATION",
+      "evidence": "lithium refinery in Corpus Christi, Texas",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "PRODUCES",
+      "object": "Battery recycling",
+      "object_type": "PRODUCT/SERVICE",
+      "evidence": "At our in-house recycling facilities, Tesla processed enough recovered material for 9,000+ Model Y RWD vehicles [...] All battery manufacturing waste recycled in 2023 at Gigafactory Texas",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "SUBJECT_TO",
+      "object": "United Nations Guiding Principles on Business and Human Rights",
+      "object_type": "REGULATION/STANDARD",
+      "evidence": "We also utilize the United Nation's Guiding Principles on Business and Human Rights (UNGPs)",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "SUBJECT_TO",
+      "object": "Task Force on Climate-Related Financial Disclosures",
+      "object_type": "REGULATION/STANDARD",
+      "evidence": "We have been aligning this report with Task Force on Climate-Related Financial Disclosures (TCFD) since 2022",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Electric vehicles",
+      "subject_type": "PRODUCT/SERVICE",
+      "predicate": "MADE_FROM",
+      "object": "Nickel",
+      "object_type": "MATERIAL",
+      "evidence": "nickel-based cathodes (NMC and NCA) contain cobalt [...] critical minerals like lithium, nickel, cobalt",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Electric vehicles",
+      "subject_type": "PRODUCT/SERVICE",
+      "predicate": "MADE_FROM",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "Our nickel-based cathodes (NMC and NCA) contain cobalt",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Electric vehicles",
+      "subject_type": "PRODUCT/SERVICE",
+      "predicate": "MADE_FROM",
+      "object": "Lithium",
+      "object_type": "MATERIAL",
+      "evidence": "Lithium is a critical input to all our batteries",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "AFFECTED_BY",
+      "object": "Forced labor risk",
+      "object_type": "RISK/EVENT",
+      "evidence": "Combatting Forced Labor in Our Supply Chain [...] audits that assess [...] indicators of forced labor",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "AFFECTED_BY",
+      "object": "Child labor risk",
+      "object_type": "RISK/EVENT",
+      "evidence": "New Levels of Transparency for Child Labor-Free Cobalt [...] no instances of child labor at our direct suppliers' sites",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Nickel",
+      "subject_type": "MATERIAL",
+      "predicate": "AFFECTED_BY",
+      "object": "Supply chain decarbonization",
+      "object_type": "RISK/EVENT",
+      "evidence": "In the Battery Supply Chain: Reducing Emissions Through Supplier Engagement [...] science-aligned GHG reduction targets",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Gigafactory Nevada",
+      "subject_type": "PRODUCT/SERVICE",
+      "predicate": "LOCATED_IN",
+      "object": "United States",
+      "object_type": "LOCATION",
+      "evidence": "battery recycling at Gigafactory Nevada",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Tesla",
+      "subject_type": "COMPANY",
+      "predicate": "COLLABORATES_WITH",
+      "object": "Responsible Minerals Initiative",
+      "object_type": "ORGANIZATION/BODY",
+      "evidence": "Tesla chairs the Nickel Working Group in the Responsible Minerals Initiative (RMI) [...] chairs the Lithium Working Group",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Glencore",
+      "subject_type": "COMPANY",
+      "predicate": "LOCATED_IN",
+      "object": "Democratic Republic of Congo",
+      "object_type": "LOCATION",
+      "evidence": "Kamoto Copper Company (Glencore) Mine DRCongo",
+      "confidence": "HIGH"
+    }
+  ]
+}

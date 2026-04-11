@@ -1,0 +1,781 @@
+
+{
+  "entities": [
+    {
+      "name": "Eagle Mine",
+      "type": "COMPANY",
+      "context": "Nickel-copper mine in Michigan that produced cobalt-bearing nickel concentrate in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Michigan",
+      "type": "LOCATION",
+      "context": "Location of Eagle Mine nickel-copper cobalt-bearing operation",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Missouri",
+      "type": "LOCATION",
+      "context": "Location of company producing nickel-copper-cobalt concentrate from historic mine tailings",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Idaho",
+      "type": "LOCATION",
+      "context": "Location of cobalt-copper-gold mine where ore extraction commenced but commissioning was suspended",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Morocco",
+      "type": "LOCATION",
+      "context": "Location of one of only two mines in the world where cobalt was the principal product",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Cobalt",
+      "type": "MATERIAL",
+      "context": "Primary subject of the document; mined, refined, traded, and consumed globally",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Cobalt-bearing nickel concentrate",
+      "type": "MATERIAL",
+      "context": "Product of Eagle Mine in Michigan",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Nickel-copper-cobalt concentrate",
+      "type": "MATERIAL",
+      "context": "Produced in Missouri from historic mine tailings",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Superalloys",
+      "type": "MATERIAL",
+      "context": "50% of U.S. cobalt consumption used in superalloys, mainly aircraft gas turbine engines",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "United States",
+      "type": "LOCATION",
+      "context": "Domestic cobalt production, consumption, imports, exports, and policy context",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Congo (Kinshasa)",
+      "type": "LOCATION",
+      "context": "World's leading source of mined cobalt, accounting for 74% of world cobalt mine production",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Indonesia",
+      "type": "LOCATION",
+      "context": "Second-largest cobalt mine producer, accounting for 7% of world production",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "China",
+      "type": "LOCATION",
+      "context": "World's leading producer of refined cobalt and leading consumer; 87% used by lithium-ion battery industry",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Norway",
+      "type": "LOCATION",
+      "context": "Top U.S. cobalt import source (metal, oxide, and salts): 25%",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Canada",
+      "type": "LOCATION",
+      "context": "U.S. cobalt import source: 15%; cobalt mine producer; reserves 230,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Finland",
+      "type": "LOCATION",
+      "context": "U.S. cobalt import source: 13%",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Japan",
+      "type": "LOCATION",
+      "context": "U.S. cobalt import source: 12%",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Australia",
+      "type": "LOCATION",
+      "context": "Cobalt mine producer; reserves 1,700,000 tons; nickel-bearing laterite deposits",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Cuba",
+      "type": "LOCATION",
+      "context": "Cobalt mine producer; reserves 500,000 tons; nickel-bearing laterite deposits",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Madagascar",
+      "type": "LOCATION",
+      "context": "Cobalt mine producer; reserves 100,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "New Caledonia",
+      "type": "LOCATION",
+      "context": "Cobalt mine producer; overseas territory of France",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Papua New Guinea",
+      "type": "LOCATION",
+      "context": "Cobalt mine producer; reserves 49,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Philippines",
+      "type": "LOCATION",
+      "context": "Cobalt mine producer; reserves 260,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Russia",
+      "type": "LOCATION",
+      "context": "Cobalt mine producer; reserves 250,000 tons; magmatic nickel-copper sulfide deposits",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Turkey",
+      "type": "LOCATION",
+      "context": "Cobalt mine producer; reserves 91,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Zambia",
+      "type": "LOCATION",
+      "context": "Sediment-hosted stratiform copper deposits containing cobalt resources",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Minnesota",
+      "type": "LOCATION",
+      "context": "Location of most U.S. identified cobalt resources",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Alaska",
+      "type": "LOCATION",
+      "context": "Location of U.S. cobalt resource occurrences",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "California",
+      "type": "LOCATION",
+      "context": "Location of U.S. cobalt resource occurrences",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Montana",
+      "type": "LOCATION",
+      "context": "Location of U.S. cobalt resource occurrences",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Oregon",
+      "type": "LOCATION",
+      "context": "Location of U.S. cobalt resource occurrences",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Pennsylvania",
+      "type": "LOCATION",
+      "context": "Location of U.S. cobalt resource occurrences",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "France",
+      "type": "LOCATION",
+      "context": "New Caledonia is an overseas territory of France",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Atlantic Ocean",
+      "type": "LOCATION",
+      "context": "Location of polymetallic nodules and crusts containing cobalt resources",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Indian Ocean",
+      "type": "LOCATION",
+      "context": "Location of polymetallic nodules and crusts containing cobalt resources",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Pacific Ocean",
+      "type": "LOCATION",
+      "context": "Location of polymetallic nodules and crusts containing cobalt resources",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "USGS",
+      "type": "ORGANIZATION",
+      "context": "Publisher of Mineral Commodity Summaries 2024; includes USGS estimates in consumption data",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "London Metal Exchange",
+      "type": "ORGANIZATION",
+      "context": "Provides cobalt cash price benchmark; has U.S. warehouse cobalt stocks",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "S&P Global Platts Metals Week",
+      "type": "ORGANIZATION",
+      "context": "Source for U.S. spot cobalt cathode price data",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Bipartisan Infrastructure Law of 2021",
+      "type": "REGULATION",
+      "context": "Provided incentives spurring U.S. cobalt processing, refining, and recycling projects",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Inflation Reduction Act of 2022",
+      "type": "REGULATION",
+      "context": "Provided incentives spurring U.S. cobalt processing, refining, and recycling projects",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Normal Trade Relations Tariff (Cobalt)",
+      "type": "REGULATION",
+      "context": "Tariff schedule for cobalt ores, chemical compounds, and wrought cobalt as of 12-31-23",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lithium-ion batteries",
+      "type": "PRODUCT",
+      "context": "Leading global use for cobalt; China uses 87% of its cobalt consumption in this industry",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Aircraft gas turbine engines",
+      "type": "PRODUCT",
+      "context": "50% of U.S. cobalt consumed in superalloys mainly for aircraft gas turbine engines",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Cemented carbides",
+      "type": "PRODUCT",
+      "context": "10% of U.S. cobalt used in cemented carbides for cutting and wear-resistant applications",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Cobalt chemicals",
+      "type": "PRODUCT",
+      "context": "About six companies in the United States produced cobalt chemicals",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Hydrometallurgical processing plant",
+      "type": "PRODUCT",
+      "context": "Being built in Missouri near historic mine tailings site",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Cobalt-copper-gold mine (Idaho)",
+      "type": "PRODUCT",
+      "context": "Ore extraction commenced but commissioning suspended in March due to low cobalt prices",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Low cobalt prices risk",
+      "type": "RISK",
+      "context": "Commissioning of Idaho cobalt-copper-gold mine suspended in March owing to low cobalt prices",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Supply concentration risk",
+      "type": "RISK",
+      "context": "Congo (Kinshasa) accounts for 74% of world cobalt mine production, creating geographic concentration",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Cobalt demand substitution risk",
+      "type": "RISK",
+      "context": "Cobalt contents of lithium-ion batteries are being reduced; cobalt-free substitutes using iron and phosphorus held significant market share in China",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Refined cobalt",
+      "type": "MATERIAL",
+      "context": "China is the world's leading producer; produced from partially refined cobalt imported from Congo (Kinshasa)",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Partially refined cobalt",
+      "type": "MATERIAL",
+      "context": "Imported by China from Congo (Kinshasa) for further refining",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Cobalt scrap",
+      "type": "MATERIAL",
+      "context": "Cobalt content of purchased scrap represented ~25% of estimated U.S. cobalt consumption in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Iron-phosphorus battery materials",
+      "type": "MATERIAL",
+      "context": "Cobalt-free substitutes using iron and phosphorus held significant market share in China",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Nickel-base alloys",
+      "type": "MATERIAL",
+      "context": "Potential substitute for cobalt in jet engines",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Neodymium-iron-boron alloys",
+      "type": "MATERIAL",
+      "context": "Potential substitute for cobalt in magnets",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Barium ferrites",
+      "type": "MATERIAL",
+      "context": "Potential substitute for cobalt in magnets",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Strontium ferrites",
+      "type": "MATERIAL",
+      "context": "Potential substitute for cobalt in magnets",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Titanium-base alloys",
+      "type": "MATERIAL",
+      "context": "Potential substitute for cobalt in prosthetics",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Rhodium",
+      "type": "MATERIAL",
+      "context": "Potential substitute for cobalt in hydroformylation catalysts",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Samarium-cobalt alloy",
+      "type": "MATERIAL",
+      "context": "Government stockpile material; potential acquisition of 200 tons in FY2024",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Polymetallic nodules",
+      "type": "MATERIAL",
+      "context": "More than 120 million tons of cobalt resources identified in polymetallic nodules and crusts on ocean floors",
+      "confidence": "HIGH"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Eagle Mine",
+      "subject_type": "COMPANY",
+      "predicate": "LOCATED_IN",
+      "object": "Michigan",
+      "object_type": "LOCATION",
+      "evidence": "the Eagle Mine, a nickel-copper mine in Michigan, produced cobalt-bearing nickel concentrate",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Eagle Mine",
+      "subject_type": "COMPANY",
+      "predicate": "PRODUCES",
+      "object": "Cobalt-bearing nickel concentrate",
+      "object_type": "MATERIAL",
+      "evidence": "the Eagle Mine, a nickel-copper mine in Michigan, produced cobalt-bearing nickel concentrate",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Missouri",
+      "object_type": "LOCATION",
+      "evidence": "In Missouri, a company produced nickel-copper-cobalt concentrate from historic mine tailings",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Idaho",
+      "object_type": "LOCATION",
+      "evidence": "Ore extraction commenced at a cobalt-copper-gold mine in Idaho",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Morocco",
+      "object_type": "LOCATION",
+      "evidence": "This mine and one in Morocco were the only mines in the world where cobalt was the principal product",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt-copper-gold mine (Idaho)",
+      "subject_type": "PRODUCT",
+      "predicate": "AFFECTED_BY",
+      "object": "Low cobalt prices risk",
+      "object_type": "RISK",
+      "evidence": "commissioning was suspended in March owing to low cobalt prices",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Congo (Kinshasa)",
+      "object_type": "LOCATION",
+      "evidence": "Congo (Kinshasa), the world's leading source of mined cobalt accounting for 74% of world cobalt mine production",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Indonesia",
+      "object_type": "LOCATION",
+      "evidence": "Indonesia, accounting for 7% [of world cobalt mine production]",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Australia",
+      "object_type": "LOCATION",
+      "evidence": "nickel-bearing laterite deposits in Australia and nearby island countries; reserves 1,700,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Canada",
+      "object_type": "LOCATION",
+      "evidence": "magmatic nickel-copper sulfide deposits... in... Canada; reserves 230,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Russia",
+      "object_type": "LOCATION",
+      "evidence": "magmatic nickel-copper sulfide deposits of mafic and ultramafic rocks in Australia, Canada, Russia",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Zambia",
+      "object_type": "LOCATION",
+      "evidence": "sediment-hosted stratiform copper deposits in Congo (Kinshasa) and Zambia",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Minnesota",
+      "object_type": "LOCATION",
+      "evidence": "Most of these [U.S. cobalt] resources are in Minnesota",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Atlantic Ocean",
+      "object_type": "LOCATION",
+      "evidence": "More than 120 million tons of cobalt resources have been identified in polymetallic nodules and crusts on the floor of the Atlantic, Indian, and Pacific Oceans",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Indian Ocean",
+      "object_type": "LOCATION",
+      "evidence": "More than 120 million tons of cobalt resources have been identified in polymetallic nodules and crusts on the floor of the Atlantic, Indian, and Pacific Oceans",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Pacific Ocean",
+      "object_type": "LOCATION",
+      "evidence": "More than 120 million tons of cobalt resources have been identified in polymetallic nodules and crusts on the floor of the Atlantic, Indian, and Pacific Oceans",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Partially refined cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Congo (Kinshasa)",
+      "object_type": "LOCATION",
+      "evidence": "most of which [refined cobalt] was produced from partially refined cobalt imported from Congo (Kinshasa)",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "China",
+      "subject_type": "LOCATION",
+      "predicate": "SOURCES_FROM",
+      "object": "Congo (Kinshasa)",
+      "object_type": "LOCATION",
+      "evidence": "most of which [China's refined cobalt] was produced from partially refined cobalt imported from Congo (Kinshasa)",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "United States",
+      "subject_type": "LOCATION",
+      "predicate": "SOURCES_FROM",
+      "object": "Norway",
+      "object_type": "LOCATION",
+      "evidence": "Import Sources (2019-22): Metal, oxide, and salts: Norway, 25%",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "United States",
+      "subject_type": "LOCATION",
+      "predicate": "SOURCES_FROM",
+      "object": "Canada",
+      "object_type": "LOCATION",
+      "evidence": "Import Sources (2019-22): Canada, 15%",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "United States",
+      "subject_type": "LOCATION",
+      "predicate": "SOURCES_FROM",
+      "object": "Finland",
+      "object_type": "LOCATION",
+      "evidence": "Import Sources (2019-22): Finland, 13%",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "United States",
+      "subject_type": "LOCATION",
+      "predicate": "SOURCES_FROM",
+      "object": "Japan",
+      "object_type": "LOCATION",
+      "evidence": "Import Sources (2019-22): Japan, 12%",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium-ion batteries",
+      "subject_type": "PRODUCT",
+      "predicate": "REQUIRES",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "China was the world's leading consumer of cobalt, with nearly 87% of its consumption used by the lithium-ion battery industry",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Aircraft gas turbine engines",
+      "subject_type": "PRODUCT",
+      "predicate": "REQUIRES",
+      "object": "Superalloys",
+      "object_type": "MATERIAL",
+      "evidence": "50% of cobalt consumed in the United States was used in superalloys, mainly aircraft gas turbine engines",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Superalloys",
+      "subject_type": "MATERIAL",
+      "predicate": "REQUIRES",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "About six companies in the United States produced cobalt chemicals. An estimated 50% of cobalt consumed in the United States was used in superalloys",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cemented carbides",
+      "subject_type": "PRODUCT",
+      "predicate": "REQUIRES",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "10% [of cobalt consumed] in cemented carbides for cutting and wear-resistant applications",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Supply concentration risk",
+      "subject_type": "RISK",
+      "predicate": "POSES_RISK",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "Congo (Kinshasa), the world's leading source of mined cobalt accounting for 74% of world cobalt mine production",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "AFFECTED_BY",
+      "object": "Cobalt demand substitution risk",
+      "object_type": "RISK",
+      "evidence": "The cobalt contents of lithium-ion batteries, the leading global use for cobalt, are being reduced; cobalt-free substitutes that use iron and phosphorus held significant market share in China",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Iron-phosphorus battery materials",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "cobalt-free substitutes that use iron and phosphorus held significant market share in China",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Neodymium-iron-boron alloys",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "Potential substitutes in other applications include... neodymium-iron-boron alloys... in magnets",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Barium ferrites",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "Potential substitutes include barium or strontium ferrites... in magnets",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Strontium ferrites",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "Potential substitutes include barium or strontium ferrites... in magnets",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Nickel-base alloys",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "nickel-base alloys or ceramics in jet engines [as cobalt substitutes]",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Rhodium",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "rhodium in hydroformylation catalysts [as cobalt substitute]",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Titanium-base alloys",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "titanium-base alloys in prosthetics [as cobalt substitute]",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "United States",
+      "subject_type": "LOCATION",
+      "predicate": "SUBJECT_TO",
+      "object": "Bipartisan Infrastructure Law of 2021",
+      "object_type": "REGULATION",
+      "evidence": "A number of projects progressed in the United States for cobalt processing, refining, or recycling, spurred by incentives from the Bipartisan Infrastructure Law of 2021",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "United States",
+      "subject_type": "LOCATION",
+      "predicate": "SUBJECT_TO",
+      "object": "Inflation Reduction Act of 2022",
+      "object_type": "REGULATION",
+      "evidence": "A number of projects progressed in the United States for cobalt processing, refining, or recycling, spurred by incentives from... the Inflation Reduction Act of 2022",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt",
+      "subject_type": "MATERIAL",
+      "predicate": "SUBJECT_TO",
+      "object": "Normal Trade Relations Tariff (Cobalt)",
+      "object_type": "REGULATION",
+      "evidence": "Tariff schedule for cobalt ores, chemical compounds, wrought cobalt as of 12-31-23 (Free to 4.4% ad valorem depending on form)",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Cobalt scrap",
+      "subject_type": "MATERIAL",
+      "predicate": "SUPPLIES_TO",
+      "object": "Lithium-ion batteries",
+      "object_type": "PRODUCT",
+      "evidence": "In 2023, numerous projects were underway globally to recover cobalt from lithium-ion battery scrap",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "USGS",
+      "subject_type": "ORGANIZATION",
+      "predicate": "PRODUCES",
+      "object": "Mineral Commodity Summaries 2024",
+      "object_type": "PRODUCT",
+      "evidence": "Mineral Commodity Summaries 2024, Publication Date: 2024-01-30, Prepared by Samantha M. Ewing",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "London Metal Exchange",
+      "subject_type": "ORGANIZATION",
+      "predicate": "LOCATED_IN",
+      "object": "United States",
+      "object_type": "LOCATION",
+      "evidence": "LME, U.S. warehouse [cobalt stocks]",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Samarium-cobalt alloy",
+      "subject_type": "MATERIAL",
+      "predicate": "CONTAINS",
+      "object": "Cobalt",
+      "object_type": "MATERIAL",
+      "evidence": "Cobalt alloys, gross weight — Samarium-cobalt alloy; excludes potential disposals of aerospace alloys",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "New Caledonia",
+      "subject_type": "LOCATION",
+      "predicate": "LOCATED_IN",
+      "object": "France",
+      "object_type": "LOCATION",
+      "evidence": "New Caledonia — Overseas territory of France",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Polymetallic nodules",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Pacific Ocean",
+      "object_type": "LOCATION",
+      "evidence": "More than 120 million tons of cobalt resources have been identified in polymetallic nodules and crusts on the floor of the Atlantic, Indian, and Pacific Oceans",
+      "confidence": "HIGH"
+    }
+  ]
+}

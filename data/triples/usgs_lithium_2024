@@ -1,0 +1,837 @@
+{
+  "entities": [
+    {
+      "name": "United States",
+      "type": "LOCATION",
+      "context": "Commercial-scale lithium production, imports, exports, government programs",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Nevada",
+      "type": "LOCATION",
+      "context": "Continental brine lithium operation location",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Utah",
+      "type": "LOCATION",
+      "context": "Location of brine-sourced waste tailings magnesium producer",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lithium",
+      "type": "MATERIAL",
+      "context": "Primary subject of the document; mined, processed, traded globally",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lithium carbonate",
+      "type": "MATERIAL",
+      "context": "Downstream lithium compound produced and traded; price benchmark used",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lithium hydroxide",
+      "type": "MATERIAL",
+      "context": "Downstream lithium compound produced in the United States",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lithium chloride",
+      "type": "MATERIAL",
+      "context": "Downstream lithium compound imported and processed",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Spodumene",
+      "type": "MATERIAL",
+      "context": "Mineral-based lithium source; prices tracked in Australia",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Argentina",
+      "type": "LOCATION",
+      "context": "Major lithium import source (51%); brine operations; resources of 22 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Chile",
+      "type": "LOCATION",
+      "context": "Major lithium import source (43%); brine operations; reserves of 9.3 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "China",
+      "type": "LOCATION",
+      "context": "Lithium import source (3%); major producer; spot price benchmark location",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Russia",
+      "type": "LOCATION",
+      "context": "Lithium import source (2%); resources of 1 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Australia",
+      "type": "LOCATION",
+      "context": "Largest lithium producer; 7 mineral operations; reserves 6.2 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Brazil",
+      "type": "LOCATION",
+      "context": "One mineral tailings operation; reserves 390,000 tons; resources 800,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Canada",
+      "type": "LOCATION",
+      "context": "Two mineral operations; battery recycling companies; reserves 930,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Zimbabwe",
+      "type": "LOCATION",
+      "context": "One mineral operation; reserves 310,000 tons; resources 690,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Portugal",
+      "type": "LOCATION",
+      "context": "Smaller lithium operation; reserves 60,000 tons; resources 270,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Bolivia",
+      "type": "LOCATION",
+      "context": "Largest lithium resources at 23 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Germany",
+      "type": "LOCATION",
+      "context": "Lithium resources of 3.8 million tons; mineral-based sources in exploration",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Congo (Kinshasa)",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in development; resources of 3 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Mexico",
+      "type": "LOCATION",
+      "context": "Lithium-clay sources in development; resources of 1.7 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Czechia",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration; resources of 1.3 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Serbia",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration; resources of 1.2 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Peru",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration; resources of 1 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Mali",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration; resources of 890,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Spain",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration; resources of 320,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Namibia",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration; resources of 230,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Ghana",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration; resources of 200,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Finland",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration; resources of 68,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Austria",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration; resources of 60,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Kazakhstan",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration; resources of 50,000 tons",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Ethiopia",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "France",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "India",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Iran",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Nigeria",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Rwanda",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Thailand",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Turkey",
+      "type": "LOCATION",
+      "context": "Mineral-based lithium sources in exploration",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "U.S. Department of Energy",
+      "type": "ORGANIZATION",
+      "context": "Selected 12 lithium-based projects funded with $1.6 billion",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Chinese Government",
+      "type": "ORGANIZATION",
+      "context": "Operated decade-long EV purchase subsidy program; expiration caused price decrease",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Benchmark Mineral Intelligence Ltd.",
+      "type": "ORGANIZATION",
+      "context": "Source for lithium carbonate price assessments",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "USGS",
+      "type": "ORGANIZATION",
+      "context": "Publisher of Mineral Commodity Summaries 2024",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "2022 U.S. Bipartisan Infrastructure Law",
+      "type": "REGULATION",
+      "context": "Funded $1.6 billion for 12 lithium-based domestic projects",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "2022 U.S. Inflation Reduction Act",
+      "type": "REGULATION",
+      "context": "Added tax incentives to consolidate battery material sourcing and EV manufacturing in North America and U.S.-partner countries",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Normal Trade Relations Tariff",
+      "type": "REGULATION",
+      "context": "3.7% ad valorem tariff on lithium oxide, hydroxide, and carbonate as of 12-31-23",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Electric vehicles",
+      "type": "PRODUCT",
+      "context": "Major driver of lithium battery demand; weaker-than-expected sales caused price decline",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lithium-ion batteries",
+      "type": "PRODUCT",
+      "context": "Primary end use of lithium (87%); used in EVs, portable electronics, grid storage",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Portable electronic devices",
+      "type": "PRODUCT",
+      "context": "Use rechargeable lithium batteries",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Electric tools",
+      "type": "PRODUCT",
+      "context": "Use rechargeable lithium batteries",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Energy grid storage",
+      "type": "PRODUCT",
+      "context": "Application using rechargeable lithium batteries",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lithium battery recycling plants",
+      "type": "PRODUCT",
+      "context": "Construction increased rapidly; ~40 companies in Canada and US, ~50 in Europe",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lithium oversupply risk",
+      "type": "RISK",
+      "context": "Concern of short-term lithium oversupply contributed to price decrease in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "EV demand weakness",
+      "type": "RISK",
+      "context": "Weaker-than-expected EV sales worldwide caused lithium price to decrease in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Supply concentration risk",
+      "type": "RISK",
+      "context": "Lithium supply security is a top priority; strategic alliances formed to ensure diversified supply",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "EV subsidy expiration",
+      "type": "RISK",
+      "context": "Expiration of Chinese Government's decade-long EV purchase subsidy program contributed to price decline",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lithium price volatility",
+      "type": "RISK",
+      "context": "Spot lithium carbonate prices in China dropped from ~$76,000/ton in Jan to ~$23,000/ton in Nov 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Calcium",
+      "type": "MATERIAL",
+      "context": "Substitute for lithium as anode material in primary batteries and in greases",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Magnesium",
+      "type": "MATERIAL",
+      "context": "Substitute for lithium as anode material in primary batteries; also Utah magnesium producer",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Mercury",
+      "type": "MATERIAL",
+      "context": "Substitute for lithium as anode material in primary batteries",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Zinc",
+      "type": "MATERIAL",
+      "context": "Substitute for lithium as anode material in primary batteries",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Aluminum",
+      "type": "MATERIAL",
+      "context": "Aluminum soaps as substitutes for lithium stearates in greases",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Europe",
+      "type": "LOCATION",
+      "context": "About 50 companies recycled lithium batteries or planned to; lithium supply security priority",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "North America",
+      "type": "LOCATION",
+      "context": "Target region for consolidating EV and battery manufacturing per Inflation Reduction Act",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Asia",
+      "type": "LOCATION",
+      "context": "Technology companies in Asia prioritizing lithium supply security",
+      "confidence": "HIGH"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Nevada",
+      "object_type": "LOCATION",
+      "evidence": "Commercial-scale lithium production in the United States was from a continental brine operation in Nevada",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Utah",
+      "object_type": "LOCATION",
+      "evidence": "brine-sourced waste tailings of a Utah-based magnesium producer",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium carbonate",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "United States",
+      "object_type": "LOCATION",
+      "evidence": "Two companies produced a wide range of downstream lithium compounds in the United States from domestic or imported lithium carbonate, lithium chloride, and lithium hydroxide",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium hydroxide",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "United States",
+      "object_type": "LOCATION",
+      "evidence": "Two companies produced a wide range of downstream lithium compounds in the United States",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Argentina",
+      "object_type": "LOCATION",
+      "evidence": "Two brine operations each in Argentina and Chile accounted for majority of world lithium production",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Chile",
+      "object_type": "LOCATION",
+      "evidence": "Two brine operations each in Argentina and Chile accounted for majority of world lithium production",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Australia",
+      "object_type": "LOCATION",
+      "evidence": "Seven mineral operations in Australia accounted for the majority of world lithium production",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Brazil",
+      "object_type": "LOCATION",
+      "evidence": "One mineral tailings operation in Brazil accounted for the majority of world lithium production",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Canada",
+      "object_type": "LOCATION",
+      "evidence": "Two mineral operations in Canada accounted for the majority of world lithium production",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "China",
+      "object_type": "LOCATION",
+      "evidence": "Five mineral and four brine operations in China accounted for the majority of world lithium production",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Zimbabwe",
+      "object_type": "LOCATION",
+      "evidence": "One mineral operation in Zimbabwe accounted for the majority of world lithium production",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Portugal",
+      "object_type": "LOCATION",
+      "evidence": "Smaller operations in Portugal also contributed to world lithium production",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Bolivia",
+      "object_type": "LOCATION",
+      "evidence": "Resources are distributed as follows: Bolivia, 23 million tons",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Germany",
+      "object_type": "LOCATION",
+      "evidence": "Germany, 3.8 million tons [lithium resources]",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Congo (Kinshasa)",
+      "object_type": "LOCATION",
+      "evidence": "Congo (Kinshasa), 3 million tons [lithium resources]; mineral-based lithium sources in development",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "United States",
+      "subject_type": "LOCATION",
+      "predicate": "SOURCES_FROM",
+      "object": "Argentina",
+      "object_type": "LOCATION",
+      "evidence": "Import Sources (2019-22): Argentina, 51%",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "United States",
+      "subject_type": "LOCATION",
+      "predicate": "SOURCES_FROM",
+      "object": "Chile",
+      "object_type": "LOCATION",
+      "evidence": "Import Sources (2019-22): Chile, 43%",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "United States",
+      "subject_type": "LOCATION",
+      "predicate": "SOURCES_FROM",
+      "object": "China",
+      "object_type": "LOCATION",
+      "evidence": "Import Sources (2019-22): China, 3%",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "United States",
+      "subject_type": "LOCATION",
+      "predicate": "SOURCES_FROM",
+      "object": "Russia",
+      "object_type": "LOCATION",
+      "evidence": "Import Sources (2019-22): Russia, 2%",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium-ion batteries",
+      "subject_type": "PRODUCT",
+      "predicate": "REQUIRES",
+      "object": "Lithium",
+      "object_type": "MATERIAL",
+      "evidence": "Lithium consumption for batteries increased significantly in recent years because rechargeable lithium batteries have been used extensively in the growing market for electric vehicles",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Electric vehicles",
+      "subject_type": "PRODUCT",
+      "predicate": "REQUIRES",
+      "object": "Lithium-ion batteries",
+      "object_type": "PRODUCT",
+      "evidence": "rechargeable lithium batteries have been used extensively in the growing market for electric vehicles",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Portable electronic devices",
+      "subject_type": "PRODUCT",
+      "predicate": "REQUIRES",
+      "object": "Lithium-ion batteries",
+      "object_type": "PRODUCT",
+      "evidence": "rechargeable lithium batteries have been used extensively in... portable electronic devices",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Electric tools",
+      "subject_type": "PRODUCT",
+      "predicate": "REQUIRES",
+      "object": "Lithium-ion batteries",
+      "object_type": "PRODUCT",
+      "evidence": "rechargeable lithium batteries have been used extensively in... electric tools",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Energy grid storage",
+      "subject_type": "PRODUCT",
+      "predicate": "REQUIRES",
+      "object": "Lithium-ion batteries",
+      "object_type": "PRODUCT",
+      "evidence": "rechargeable lithium batteries have been used extensively in... energy grid storage applications",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "U.S. Department of Energy",
+      "subject_type": "ORGANIZATION",
+      "predicate": "REGULATED_BY",
+      "object": "2022 U.S. Bipartisan Infrastructure Law",
+      "object_type": "REGULATION",
+      "evidence": "U.S. Department of Energy selected 12 lithium-based projects funded with $1.6 billion from the 2022 U.S. Bipartisan Infrastructure Law",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "U.S. Department of Energy",
+      "subject_type": "ORGANIZATION",
+      "predicate": "PRODUCES",
+      "object": "Lithium battery recycling plants",
+      "object_type": "PRODUCT",
+      "evidence": "selected 12 lithium-based projects... to support new commercial-scale domestic facilities to extract and process lithium, manufacture battery components, recycle batteries",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Electric vehicles",
+      "subject_type": "PRODUCT",
+      "predicate": "SUBJECT_TO",
+      "object": "2022 U.S. Inflation Reduction Act",
+      "object_type": "REGULATION",
+      "evidence": "The 2022 U.S. Inflation Reduction Act added tax incentives to consolidate sourcing of battery materials and manufacturing of EVs to North American and U.S.-partner countries",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "SUBJECT_TO",
+      "object": "2022 U.S. Inflation Reduction Act",
+      "object_type": "REGULATION",
+      "evidence": "The 2022 U.S. Inflation Reduction Act added tax incentives to consolidate sourcing of battery materials",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium carbonate",
+      "subject_type": "MATERIAL",
+      "predicate": "SUBJECT_TO",
+      "object": "Normal Trade Relations Tariff",
+      "object_type": "REGULATION",
+      "evidence": "Lithium carbonate: 3.7% ad valorem (Normal Trade Relations 12-31-23)",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium hydroxide",
+      "subject_type": "MATERIAL",
+      "predicate": "SUBJECT_TO",
+      "object": "Normal Trade Relations Tariff",
+      "object_type": "REGULATION",
+      "evidence": "Lithium oxide and hydroxide: 3.7% ad valorem (Normal Trade Relations 12-31-23)",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "AFFECTED_BY",
+      "object": "Lithium oversupply risk",
+      "object_type": "RISK",
+      "evidence": "concern of a short-term lithium oversupply... caused the price of lithium to decrease considerably in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "AFFECTED_BY",
+      "object": "EV subsidy expiration",
+      "object_type": "RISK",
+      "evidence": "expiration of the Chinese Government's decade-long program of subsidies for electric vehicle (EV) purchases... caused the price of lithium to decrease considerably in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium",
+      "subject_type": "MATERIAL",
+      "predicate": "AFFECTED_BY",
+      "object": "EV demand weakness",
+      "object_type": "RISK",
+      "evidence": "weaker-than-expected EV sales worldwide caused the price of lithium to decrease considerably in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium price volatility",
+      "subject_type": "RISK",
+      "predicate": "AFFECTED_BY",
+      "object": "EV subsidy expiration",
+      "object_type": "RISK",
+      "evidence": "expiration of the Chinese Government's decade-long program of subsidies for EV purchases... caused the price of lithium to decrease considerably in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium price volatility",
+      "subject_type": "RISK",
+      "predicate": "AFFECTED_BY",
+      "object": "Lithium oversupply risk",
+      "object_type": "RISK",
+      "evidence": "concern of a short-term lithium oversupply... caused the price of lithium to decrease considerably in 2023",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Chinese Government",
+      "subject_type": "ORGANIZATION",
+      "predicate": "CREATES_IMPACT",
+      "object": "EV subsidy expiration",
+      "object_type": "RISK",
+      "evidence": "expiration of the Chinese Government's decade-long program of subsidies for electric vehicle (EV) purchases",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium carbonate",
+      "subject_type": "MATERIAL",
+      "predicate": "MENTIONED_IN",
+      "object": "Benchmark Mineral Intelligence Ltd.",
+      "object_type": "ORGANIZATION",
+      "evidence": "Lithium carbonate price assessments for spot and long-term contracts. Source: Benchmark Mineral Intelligence Ltd.",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Supply concentration risk",
+      "subject_type": "RISK",
+      "predicate": "AFFECTED_BY",
+      "object": "Lithium",
+      "object_type": "MATERIAL",
+      "evidence": "Lithium supply security has become a top priority for technology companies in Asia, Europe, and North America",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Calcium",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Lithium",
+      "object_type": "MATERIAL",
+      "evidence": "calcium, magnesium, mercury, and zinc as anode material in primary batteries [as substitutes for lithium]",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Magnesium",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Lithium",
+      "object_type": "MATERIAL",
+      "evidence": "calcium, magnesium, mercury, and zinc as anode material in primary batteries [as substitutes for lithium]",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Mercury",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Lithium",
+      "object_type": "MATERIAL",
+      "evidence": "calcium, magnesium, mercury, and zinc as anode material in primary batteries [as substitutes for lithium]",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Zinc",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Lithium",
+      "object_type": "MATERIAL",
+      "evidence": "calcium, magnesium, mercury, and zinc as anode material in primary batteries [as substitutes for lithium]",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Aluminum",
+      "subject_type": "MATERIAL",
+      "predicate": "ALTERNATIVE_TO",
+      "object": "Lithium",
+      "object_type": "MATERIAL",
+      "evidence": "calcium and aluminum soaps as substitutes for stearates in greases",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Spodumene",
+      "subject_type": "MATERIAL",
+      "predicate": "LOCATED_IN",
+      "object": "Australia",
+      "object_type": "LOCATION",
+      "evidence": "Spodumene (6% lithium oxide) prices in Australia (free on board) decreased from approximately $6,000 per ton in January to about $2,500 per ton in November",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium battery recycling plants",
+      "subject_type": "PRODUCT",
+      "predicate": "LOCATED_IN",
+      "object": "Canada",
+      "object_type": "LOCATION",
+      "evidence": "about 40 companies in Canada and the United States... recycled lithium batteries or planned to do so",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium battery recycling plants",
+      "subject_type": "PRODUCT",
+      "predicate": "LOCATED_IN",
+      "object": "United States",
+      "object_type": "LOCATION",
+      "evidence": "about 40 companies in Canada and the United States... recycled lithium batteries or planned to do so",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium battery recycling plants",
+      "subject_type": "PRODUCT",
+      "predicate": "LOCATED_IN",
+      "object": "Europe",
+      "object_type": "LOCATION",
+      "evidence": "50 companies in Europe recycled lithium batteries or planned to do so",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "Lithium battery recycling plants",
+      "subject_type": "PRODUCT",
+      "predicate": "SUPPLIES_TO",
+      "object": "Electric vehicles",
+      "object_type": "PRODUCT",
+      "evidence": "Automobile companies and battery recyclers partnered to supply the automobile industry with a source of battery materials",
+      "confidence": "HIGH"
+    },
+    {
+      "subject": "USGS",
+      "subject_type": "ORGANIZATION",
+      "predicate": "PRODUCES",
+      "object": "Mineral Commodity Summaries 2024",
+      "object_type": "PRODUCT",
+      "evidence": "Publication Date: 2024-01-30, Mineral Commodity Summaries 2024",
+      "confidence": "HIGH"
+    }
+  ]
+}
