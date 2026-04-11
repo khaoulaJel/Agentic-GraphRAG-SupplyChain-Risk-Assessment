@@ -1,6 +1,9 @@
-"""Entity alias resolution for retrieval-time normalization."""
 
 from __future__ import annotations
+def _get_alias_logger():
+    import logging
+    return logging.getLogger("alias")
+"""Entity alias resolution for retrieval-time normalization."""
 
 import logging
 from pathlib import Path
@@ -18,6 +21,10 @@ _model = SentenceTransformer('all-MiniLM-L6-v2')
 def get_embedding(text: str):
     emb = _model.encode([text], normalize_embeddings=True)
     return emb[0].tolist() if isinstance(emb, np.ndarray) or hasattr(emb, 'tolist') else emb[0]
+
+# Alias for compatibility with test and __init__.py
+def resolve_entities(extracted: dict, driver):
+    return resolve_entities_semantically(extracted, driver)
 
 def resolve_entities_semantically(extracted: dict, driver):
     resolved = {}

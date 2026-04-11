@@ -15,7 +15,7 @@ ENTITY_EXTRACTION_PROMPT = """
 You are a supply chain entity parser. Extract all named entities from the query below.
 
 Return ONLY valid JSON in this exact format:
-{
+{{
     "companies": [],
     "countries": [],
     "entities": [],
@@ -27,7 +27,7 @@ Return ONLY valid JSON in this exact format:
     "regulations": [],
     "regulatory_bodies": [],
     "risk_events": []
-}
+}}
 
 If a category has no entities, return an empty list. No explanations.
 
