@@ -51,6 +51,21 @@ Use this flow when working with the modular GraphRAG pipeline in the `graphrag/`
   ```bash
   python -m graphrag.main
   ```
+5. Compare GraphRAG vs RAG-only (graph on/off):
+  ```bash
+  # Run both modes on default questions
+  python -m graphrag.compare_rag_vs_graphrag --mode both
+
+  # RAG-only baseline (graph retrieval disabled)
+  python -m graphrag.compare_rag_vs_graphrag --mode rag
+
+  # GraphRAG only
+  python -m graphrag.compare_rag_vs_graphrag --mode graphrag
+  ```
+6. Run LangGraph agent mode (triage + routing):
+  ```bash
+  python -m agent.run
+  ```
 
 Notes:
 - `graphrag/main.py` contains example questions you can edit quickly.
@@ -105,4 +120,42 @@ Why this is useful:
 - Produces concise, source-aware answers suitable for risk briefings and analyst handoff.
 
 Current note:
-- One legacy index (`entity_embedding_idx`) still reports a dimensionality mismatch (384 vs 3072). Core hybrid answers remain usable via the other label-specific indexes.
+- All vector indexes are now aligned and online, including `entity_embedding_idx` at 3072 dimensions.
+
+## LangGraph Agent Layer (New)
+
+### What was added (brief)
+- A two-agent LangGraph workflow in the `agent/` package.
+- Triage agent: classifies each query as `simple` (answer from history) or `complex` (needs retrieval).
+- Router agent: uses 3 tools for complex queries:
+  - knowledge graph search (`hybrid_query`)
+  - vector search (`vector_search`)
+  - web news search (Tavily)
+- Final synthesis step injects retrieved context into a Gemini prompt and returns one response.
+
+### Observed run results
+- `hello` was correctly routed as `simple` and answered from conversation memory.
+- `What risk events are associated with Tesla's supply chain?` was correctly routed as `complex`.
+- Router executed retrieval tools and collected context (`[ROUTER] Retrieved 5 tool result(s)`).
+- Final answer included concrete risk categories and sources, including:
+  - forced labor and child labor (`tesla_impact_2023`)
+  - supply concentration / cobalt exposure (`usgs_cobalt_2024`)
+  - supply chain disruption (`ita_semiconductor_2023`)
+- Follow-up `clarify 3rd point` was routed to `simple`, showing history-aware clarification behavior.
+
+### How to try it out
+1. Ensure these env vars are set in `.env`:
+  - `GOOGLE_API_KEY` (or `GEMINI_API_KEY`)
+  - `TAVILY_API_KEY`
+  - Neo4j connection vars (`NEO4J_URI`, `NEO4J_USER`, `NEO4J_PASSWORD`)
+2. Start chat loop:
+  ```bash
+  python -m agent.run
+  ```
+3. Try this mini flow:
+  - `hello`
+  - `What risk events are associated with Tesla's supply chain?`
+  - `clarify 3rd point`
+
+Note:
+- You may still see non-blocking deprecation warnings from LangChain components; current functionality works.

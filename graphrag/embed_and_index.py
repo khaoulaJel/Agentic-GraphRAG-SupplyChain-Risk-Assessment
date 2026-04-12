@@ -42,6 +42,7 @@ LABELS_TO_EMBED = [
 
 DROP_QUERIES = [
     "DROP INDEX entity_embedding IF EXISTS",
+    "DROP INDEX entity_embedding_idx IF EXISTS",
     "DROP INDEX company_embedding IF EXISTS",
     "DROP INDEX node_embedding IF EXISTS",
     "DROP INDEX embedding IF EXISTS",
@@ -139,6 +140,28 @@ def write_embedding(label: str, name: str, embedding: list[float]) -> None:
 
 def create_vector_index(label: str) -> str:
     index_name = VECTOR_INDEXES[label]
+    with driver.session(**session_kwargs()) as session:
+        existing = session.run(
+            """
+            SHOW VECTOR INDEXES
+            YIELD name, options
+            WHERE name = $name
+            RETURN name, options
+            """,
+            name=index_name,
+        ).single()
+
+        # If an index already exists with the wrong dimensions, rebuild it.
+        if existing:
+            options = existing.get("options") or {}
+            index_cfg = options.get("indexConfig") or {}
+            existing_dims = index_cfg.get("vector.dimensions")
+            if existing_dims is not None and int(existing_dims) != DIMENSIONS:
+                print(
+                    f"  Rebuilding {index_name}: dimensions {existing_dims} -> {DIMENSIONS}"
+                )
+                session.run(f"DROP INDEX {index_name} IF EXISTS")
+
     cypher = f"""
     CREATE VECTOR INDEX {index_name} IF NOT EXISTS
     FOR (n:{label}) ON (n.embedding)
