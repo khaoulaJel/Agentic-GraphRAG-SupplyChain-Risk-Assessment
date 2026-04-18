@@ -7,15 +7,22 @@ from typing import Any
 from langchain_core.output_parsers import StrOutputParser
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-from graphrag.config import GEMINI_API_KEY, GEMINI_CHAT_MODEL, validate_config
+from graphrag.config import GOOGLE_API_KEY, GEMINI_CHAT_MODEL, validate_config
 from graphrag.graph_retriever import graph_search
 from graphrag.hybrid_chain import HYBRID_PROMPT, format_graph_results, format_vector_results
 from graphrag.vector_retriever import vector_search
 
 
 DEFAULT_QUESTIONS = [
-    "What risk events are associated with Tesla's supply chain?",
-    "Which countries are most exposed to cobalt supply risk in this graph?",
+    "Which companies operate in regions with similar supply chain risk profiles to Tesla's cobalt suppliers?",
+    "Which companies directly supply lithium to Tesla?",
+    "What risk events are currently affecting lithium and cobalt mining operations?",
+]
+
+QUERY_LABELS = [
+    "Graph-only",
+    "RAG-only",
+    "GraphRAG hybrid",
 ]
 
 
@@ -23,24 +30,35 @@ def _build_llm() -> ChatGoogleGenerativeAI:
     validate_config()
     return ChatGoogleGenerativeAI(
         model=GEMINI_CHAT_MODEL,
-        google_api_key=GEMINI_API_KEY,
+        google_api_key=GOOGLE_API_KEY,
         temperature=0.2,
     )
 
 
-def run_query(question: str, *, use_graph: bool, top_k: int, llm: ChatGoogleGenerativeAI) -> dict[str, Any]:
-    t0 = time.perf_counter()
-
+def retrieve(question: str, top_k: int) -> dict[str, Any]:
     vector_results = vector_search(question, top_k=top_k)
     vector_context = format_vector_results(vector_results)
+    graph_result = graph_search(question)
+    graph_context = format_graph_results(graph_result)
+    cypher = graph_result.get("cypher", "")
 
-    if use_graph:
-        graph_result = graph_search(question)
-        graph_context = format_graph_results(graph_result)
-        cypher = graph_result.get("cypher", "")
-    else:
-        graph_context = "Graph retrieval disabled for this run (RAG-only baseline)."
-        cypher = ""
+    return {
+        "vector_results": vector_results,
+        "vector_context": vector_context,
+        "graph_context": graph_context,
+        "cypher": cypher,
+    }
+
+
+def synthesize(
+    question: str,
+    *,
+    mode: str,
+    vector_context: str,
+    graph_context: str,
+    llm: ChatGoogleGenerativeAI,
+) -> dict[str, Any]:
+    t0 = time.perf_counter()
 
     chain = HYBRID_PROMPT | llm | StrOutputParser()
     answer = chain.invoke(
@@ -58,21 +76,14 @@ def run_query(question: str, *, use_graph: bool, top_k: int, llm: ChatGoogleGene
     elapsed = time.perf_counter() - t0
     return {
         "question": question,
-        "mode": "GraphRAG" if use_graph else "RAG-only",
+        "mode": mode,
         "elapsed_sec": elapsed,
-        "vector_hits": len(vector_results),
-        "cypher": cypher,
         "answer": answer,
     }
 
 
 def print_result(result: dict[str, Any]) -> None:
-    print("\n" + "-" * 80)
-    print(f"Mode: {result['mode']}")
-    print(f"Time: {result['elapsed_sec']:.2f}s | Vector hits: {result['vector_hits']}")
-    if result.get("cypher"):
-        print(f"Cypher: {result['cypher']}")
-    print("Answer:")
+    print(f"\n[{result['mode']}]")
     print(result["answer"])
 
 
@@ -82,9 +93,9 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--mode",
-        choices=["both", "graphrag", "rag"],
+        choices=["both", "graphrag", "rag", "graph"],
         default="both",
-        help="Comparison mode: both, graphrag only, or rag-only.",
+        help="Comparison mode: both, graphrag only, rag-only, or graph-only.",
     )
     parser.add_argument(
         "--top-k",
@@ -105,19 +116,48 @@ def main() -> None:
     args = parse_args()
     llm = _build_llm()
     questions = args.questions or DEFAULT_QUESTIONS
+    query_labels = QUERY_LABELS if not args.questions else ["Custom"] * len(questions)
 
-    for q in questions:
+    for i, (q, label) in enumerate(zip(questions, query_labels), 1):
         print("\n" + "=" * 80)
-        print(f"Question: {q}")
+        print(f"Query {i} of {len(questions)} - favors: {label}")
+        print(f"Q: {q}")
         print("=" * 80)
 
+        retrieved = retrieve(q, top_k=args.top_k)
+
         if args.mode in {"both", "graphrag"}:
-            graph_result = run_query(q, use_graph=True, top_k=args.top_k, llm=llm)
-            print_result(graph_result)
+            print_result(
+                synthesize(
+                    q,
+                    mode="GraphRAG",
+                    vector_context=retrieved["vector_context"],
+                    graph_context=retrieved["graph_context"],
+                    llm=llm,
+                )
+            )
 
         if args.mode in {"both", "rag"}:
-            rag_result = run_query(q, use_graph=False, top_k=args.top_k, llm=llm)
-            print_result(rag_result)
+            print_result(
+                synthesize(
+                    q,
+                    mode="RAG-only",
+                    vector_context=retrieved["vector_context"],
+                    graph_context="Graph retrieval disabled for this run (RAG-only baseline).",
+                    llm=llm,
+                )
+            )
+
+        if args.mode in {"both", "graph"}:
+            print_result(
+                synthesize(
+                    q,
+                    mode="Graph-only",
+                    vector_context="Vector retrieval disabled for this run (Graph-only mode).",
+                    graph_context=retrieved["graph_context"],
+                    llm=llm,
+                )
+            )
 
 
 if __name__ == "__main__":

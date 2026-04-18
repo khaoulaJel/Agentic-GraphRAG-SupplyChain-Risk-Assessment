@@ -7,7 +7,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-from graphrag.config import GEMINI_API_KEY, GEMINI_CHAT_MODEL, validate_config
+from graphrag.config import GOOGLE_API_KEY, GEMINI_CHAT_MODEL, validate_config
 from graphrag.graph_retriever import graph_search
 from graphrag.vector_retriever import vector_search
 
@@ -16,7 +16,7 @@ validate_config()
 
 llm = ChatGoogleGenerativeAI(
     model=GEMINI_CHAT_MODEL,
-    google_api_key=GEMINI_API_KEY,
+    google_api_key=GOOGLE_API_KEY,
     temperature=0.2,
 )
 

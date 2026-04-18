@@ -5,12 +5,12 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 from agent.state import AgentState
-from graphrag.config import GEMINI_API_KEY, GEMINI_CHAT_MODEL
+from graphrag.config import GOOGLE_API_KEY, GEMINI_CHAT_MODEL
 
 
 llm = ChatGoogleGenerativeAI(
     model=GEMINI_CHAT_MODEL,
-    google_api_key=GEMINI_API_KEY,
+    google_api_key=GOOGLE_API_KEY,
     temperature=0,
 )
 

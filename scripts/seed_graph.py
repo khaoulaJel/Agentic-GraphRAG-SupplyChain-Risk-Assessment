@@ -3,7 +3,7 @@ seed_graph.py — Seed the Neo4j graph with supply chain data.
 
 TODO: Populate with real data once ontology and data sources are finalized.
 
-Run: python seed_graph.py
+Run: python -m scripts.seed_graph
 """
 
 from graph.builder import get_driver, run_cypher, close

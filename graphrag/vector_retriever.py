@@ -8,7 +8,7 @@ from google.genai import types
 from neo4j import GraphDatabase
 
 from graphrag.config import (
-    GEMINI_API_KEY,
+    GOOGLE_API_KEY,
     GEMINI_EMBED_DIMENSIONS,
     GEMINI_EMBED_MODEL,
     NEO4J_DATABASE,
@@ -21,7 +21,7 @@ from graphrag.config import (
 )
 
 
-client = genai.Client(api_key=GEMINI_API_KEY)
+client = genai.Client(api_key=GOOGLE_API_KEY)
 
 
 def embed_query(text: str) -> list[float]:

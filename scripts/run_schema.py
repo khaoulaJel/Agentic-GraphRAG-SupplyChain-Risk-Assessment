@@ -1,6 +1,6 @@
 """
 run_schema.py — Apply Neo4j schema constraints and indexes.
-Run: python run_schema.py
+Run: python -m scripts.run_schema
 """
 
 from graph.builder import get_driver, close

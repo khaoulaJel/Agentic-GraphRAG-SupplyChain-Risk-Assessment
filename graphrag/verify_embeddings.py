@@ -5,7 +5,7 @@ from google.genai import types
 from neo4j import GraphDatabase
 
 from graphrag.config import (
-    GEMINI_API_KEY,
+    GOOGLE_API_KEY,
     GEMINI_EMBED_MODEL,
     NEO4J_PASSWORD,
     NEO4J_URI,
@@ -28,7 +28,7 @@ LABELS = [
     "Country",
 ]
 
-client = genai.Client(api_key=GEMINI_API_KEY)
+client = genai.Client(api_key=GOOGLE_API_KEY)
 driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
 

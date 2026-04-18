@@ -7,14 +7,14 @@ from langgraph.prebuilt import create_react_agent
 
 from agent.state import AgentState
 from agent.tools import search_knowledge_graph, search_news, search_vectors
-from graphrag.config import GEMINI_API_KEY, GEMINI_CHAT_MODEL
+from graphrag.config import GOOGLE_API_KEY, GEMINI_CHAT_MODEL
 
 
 TOOLS = [search_knowledge_graph, search_vectors, search_news]
 
 llm = ChatGoogleGenerativeAI(
     model=GEMINI_CHAT_MODEL,
-    google_api_key=GEMINI_API_KEY,
+    google_api_key=GOOGLE_API_KEY,
     temperature=0,
 )
 
@@ -114,7 +114,7 @@ def router_node(state: AgentState) -> AgentState:
         SYNTHESIS_PROMPT
         | ChatGoogleGenerativeAI(
             model=GEMINI_CHAT_MODEL,
-            google_api_key=GEMINI_API_KEY,
+            google_api_key=GOOGLE_API_KEY,
             temperature=0.2,
         )
         | StrOutputParser()

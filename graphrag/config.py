@@ -10,7 +10,7 @@ NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
 NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "")
 NEO4J_DATABASE = os.getenv("NEO4J_DATABASE", "neo4j")
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY", "")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 
 # Existing vector index name in Neo4j. Change via env if needed.
 VECTOR_INDEX_NAME = os.getenv("NEO4J_VECTOR_INDEX", "embedding")
@@ -43,5 +43,5 @@ def session_kwargs() -> dict[str, str]:
 def validate_config() -> None:
     if not NEO4J_PASSWORD:
         raise ValueError("NEO4J_PASSWORD is required.")
-    if not GEMINI_API_KEY:
-        raise ValueError("Set GEMINI_API_KEY or GOOGLE_API_KEY in .env.")
+    if not GOOGLE_API_KEY:
+        raise ValueError("Set GOOGLE_API_KEY in .env.")

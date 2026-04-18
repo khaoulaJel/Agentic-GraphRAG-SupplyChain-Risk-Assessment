@@ -57,10 +57,11 @@ def search_news(query: str) -> str:
         if not tavily_key:
             return "News search failed: TAVILY_API_KEY is not set."
 
-        from langchain_community.tools.tavily_search import TavilySearchResults
+        from tavily import TavilyClient
 
-        tavily = TavilySearchResults(max_results=3)
-        results = tavily.invoke(query)
+        client = TavilyClient(api_key=tavily_key)
+        response = client.search(query=query, max_results=3)
+        results = response.get("results", []) if isinstance(response, dict) else []
         if not results:
             return "No news results found."
         lines: list[str] = []
@@ -70,4 +71,7 @@ def search_news(query: str) -> str:
             lines.append(f"- {title}: {content[:300]}...")
         return "\n".join(lines)
     except Exception as e:  # noqa: BLE001
-        return f"News search failed: {str(e)}"
+        msg = str(e)
+        if "401" in msg or "Unauthorized" in msg:
+            return "News search failed: Tavily API key is invalid or unauthorized (401). Update TAVILY_API_KEY in .env."
+        return f"News search failed: {msg}"
